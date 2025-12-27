@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: rgba(232, 228, 18, 0.217);
+}
+
+#calculator{
+    font-family: Arial, sans-serif;
+    background-color: purple;
+    border-radius:30px;
+    max-width:390px;
+    overflow:hidden;
+
+}
+#display{
+    width:100%;
+    padding:15px;
+    font-size:3rem;
+    text-align: left;
+    border:none;
+    background-color: aquamarine;
+}
+/* Trong trang html se thay id="keys" chua tat ca cac button */
+#keys{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Khoang cach giua cac dong*/
+    gap: 10px;
+    /* Khoang cach xung quanh cac phim bam*/
+    padding: 20px;
+}
+button{
+    width:73px;
+    height:73px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(16, 181, 38);
+    color: rgb(7, 10, 97);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+/*Khi di chuot qua se co hieu ung (mau sang/toi hon)*/
+button:hover{
+    background-color: rgb(69, 232, 90);
+}
+button:active{
+    background-color: rgb(86, 255, 108);
+}
+.operator-btn{
+    background-color: rgb(220, 204, 28);
+}
+.operator-btn:hover{
+    background-color: rgb(240, 222, 29);
+}
+.operator-btn:active{ 
+    background-color: rgb(255, 241, 82);
+}
+.operator-del{
+    background-color: rgb(150, 7, 7);
+}
+.operator-del:hover{
+    background-color: rgb(180, 25, 25);
+}
+.operator-del:active{
+    background-color: rgb(199, 45, 45);
+}
+.operator-eq{
+    background-color: rgb(60, 6, 179);
+}
+.operator-eq:hover{
+    background-color: rgb(73, 17, 196);
+}
+.operator-eq:active{
+    background-color: rgb(83, 25, 207);
+}

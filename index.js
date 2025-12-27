@@ -19,11 +19,15 @@ function clearDisplay(){
 function calculate(){
     // try dùng để chạy thử đoạn code có khả năng bị lỗi
     try{
-        // display là một element tự đặt được do đã gọi 'const display=' ở trên, value là một property (thuộc tính) do trình duyệt ĐOM định nghĩa sẵn.
-        display.value = eval(display.value)
+        var pe=display.value
+        // Gọi hàm string.replace(pattern, replace) ở đây là tìm mọi số 'm' có dâu '%' ---> (m/100).
+        pe=pe.replace(/(\d+(\.\d+)?)%/g, "($1/100)");
+        // display là một element tự đặt được do đã gọi 'const display=' ở trên, value là một property (thuộc tính) do trình duyệt DOM định nghĩa sẵn.
+        display.value = eval(pe);
     }
     catch(error){
         display.value = "Lỗi mẹ rồi! Lại";
     }
+
 
 }

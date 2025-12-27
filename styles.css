@@ -4,24 +4,25 @@ body{
     justify-content:center;
     align-items:center;
     height:100vh;
-    background-color: rgba(232, 228, 18, 0.217);
+    background-color: rgb(215, 72, 72);
 }
 
 #calculator{
     font-family: Arial, sans-serif;
-    background-color: purple;
+    background-color: rgb(50, 46, 46);
     border-radius:30px;
-    max-width:390px;
+    max-width:380px;
     overflow:hidden;
 
 }
 #display{
     width:100%;
     padding:15px;
-    font-size:3rem;
+    font-size:2.5rem;
     text-align: left;
     border:none;
-    background-color: aquamarine;
+    background-color: rgb(61, 154, 194);
+    color: rgb(253, 255, 253)
 }
 /* Trong trang html se thay id="keys" chua tat ca cac button */
 #keys{
@@ -33,12 +34,12 @@ body{
     padding: 20px;
 }
 button{
-    width:73px;
-    height:73px;
-    border-radius: 30px;
+    width:70px;
+    height:70px;
+    border-radius: 90px;
     border: none;
-    background-color: rgb(16, 181, 38);
-    color: rgb(7, 10, 97);
+    background-color: rgb(139, 145, 140);
+    color: white;
     font-size: 2rem;
     font-weight: bold;
     cursor:pointer;
@@ -46,10 +47,10 @@ button{
 
 /*Khi di chuot qua se co hieu ung (mau sang/toi hon)*/
 button:hover{
-    background-color: rgb(69, 232, 90);
+    background-color: rgb(161, 163, 161);
 }
 button:active{
-    background-color: rgb(86, 255, 108);
+    background-color: rgb(174, 176, 174);
 }
 .operator-btn{
     background-color: rgb(220, 204, 28);
@@ -62,6 +63,7 @@ button:active{
 }
 .operator-del{
     background-color: rgb(150, 7, 7);
+    font-size: 1.5rem;
 }
 .operator-del:hover{
     background-color: rgb(180, 25, 25);

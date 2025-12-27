@@ -12,6 +12,11 @@
         <div id="keys">
             <!-- Khi bam nut, trinh duyet se goi 1 ham (function) co ten la appendToDisplay()-->
             <!--onclick="tenHam()"--> 
+            <!--Khi bấm nút->gọi hàm appendToDisplay và truyền cho nó giá trị = 7 (đây là chức năng của html)-->
+            <button onclick="appendToDisplay('(')" class="operator-btn"> ( </button>
+            <button onclick="appendToDisplay(')')" class="operator-btn"> ) </button>
+            <button onclick="appendToDisplay('%')" class="operator-btn"> % </button>
+            <button onclick="clearDisplay()" class="operator-del"> DEL </button>
             <button onclick="appendToDisplay('7')"> 7 </button>
             <button onclick="appendToDisplay('8')"> 8 </button>
             <button onclick="appendToDisplay('9')"> 9 </button>
@@ -23,12 +28,11 @@
             <button onclick="appendToDisplay('1')"> 1 </button>
             <button onclick="appendToDisplay('2')"> 2 </button>
             <button onclick="appendToDisplay('3')"> 3 </button>
-            <button onclick="appendToDisplay('*')" class="operator-btn"> * </button>
-            <button onclick="clearDisplay()" class="operator-del"> DEL </button>
+            <button onclick="appendToDisplay('*')" class="operator-btn"> x </button>
             <button onclick="appendToDisplay('0')"> 0 </button>
-            <button onclick="appendToDisplay('.')" class="operator-btn"> . </button>
-            <button onclick="appendToDisplay('/')" class="operator-btn"> / </button>
+            <button onclick="appendToDisplay('.')" > . </button>
             <button onclick="calculate()" class="operator-eq"> = </button>
+            <button onclick="appendToDisplay('/')" class="operator-btn"> / </button>
            
 
         </div>

@@ -22,7 +22,8 @@ body{
     text-align: left;
     border:none;
     background-color: rgb(61, 154, 194);
-    color: rgb(253, 255, 253)
+    color: rgb(253, 255, 253);
+    caret-color: black;
 }
 /* Trong trang html se thay id="keys" chua tat ca cac button */
 #keys{
@@ -79,4 +80,22 @@ button:active{
 }
 .operator-eq:active{
     background-color: rgb(83, 25, 207);
+}
+.operator-direc{
+    background-color: rgb(4, 132, 55);
+}
+.operator-direc:hover{
+    background-color: rgb(7, 154, 65);
+}
+.operator-direc:active{
+    background-color: rgb(12, 199, 87);
+}
+.operator-spc{
+    background-color: rgb(143, 6, 109);
+}
+.operator-spc:hover{
+    background-color: rgb(160, 8, 122);
+}
+.operator-spc:active{
+    background-color: rgb(179, 10, 137);
 }

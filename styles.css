@@ -1,4 +1,4 @@
-body{
+ody{
     margin:0;
     display: flex;
     justify-content:center;
@@ -99,3 +99,4 @@ button:active{
 .operator-spc:active{
     background-color: rgb(179, 10, 137);
 }
+
